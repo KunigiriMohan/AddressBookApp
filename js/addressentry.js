@@ -44,6 +44,24 @@ const save = () =>{                                                 //save funct
     }
 }
 
+const resetForm = ()=>{
+    setValue('#name','');
+    setEmployeePayrollData
+    setValue('#phone','');
+    setValue('#notes','');
+    setValue('#city','mumbai');
+    setValue('#state','maharastra');
+    setValue('#pincode','400001');
+}
+/**Unselectedvalues() function is to empty the all the values in the form after entering the details */
+const unsetSelectedValues = (propertyValue) => {
+    let allItems = document.querySelectorAll(propertyValue);
+    allItems.forEach(item => {
+        item.checked = false;
+    });
+}
+
+
 function createAndUpdateStorage(contact){
         
     let contactList = JSON.parse(localStorage.getItem("ContactList"));
