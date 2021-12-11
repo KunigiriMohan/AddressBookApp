@@ -1,4 +1,6 @@
 class contactData{
+
+    /**getters and setters for setting and getting values */
     get firstName(){
         return this._firstName;
     }
@@ -41,7 +43,7 @@ class contactData{
     set pinCode(pinCode){
         this._pinCode=pinCode;
     }
-
+/**toString() method to display details */ 
     toString(){
         return "Name: "+this.firstName+" Phone Number: "+this.phoneNumber+"Notes: "+this.notes+" City"+this.city+" State: "+this._state+" PinCode : "+this._pinCode;
     }
