@@ -18,8 +18,12 @@
         </div>
         </header>
         <div class="form-content">
-            <form class="form" action="#" onsubmit="save(event);return false">
-                <div class="form-head">PERSON ADDRESS DETAILS</div>
+            <form class="form" action="#" onsubmit="save()" onreset="reset()">
+                <div class="form-head">
+                    <div class="form-head-text">Person Address Form</div>
+                    <a href="../pages/.home.html"><img class="form-head-image"src="../asserts/icons/cancel.png" alt="logo" ></a>
+                </div>
+                <div class="form-content">
                 <div class="row-content">
                     <label class="label-text" for="name">Full Name</label>
                     <input class="input" type="text" id="name" name="name" placeholder="Your Name.." required>
@@ -64,25 +68,7 @@
                     </div>
                 </div>
             </form><!-------Name and mobile validations -------><!------UC4------------>
-            <script>
-                const text = document.querySelector('#name');
-                const textError = document.querySelector('.text-error');
-                text.addEventListener('input',function(){
-                    let nameRegex = RegExp('^[A-Z]{1}[a-z]{2,}$');
-                    if(nameRegex.test(text.value))
-                        textError.textContent = "";
-                    else textError.textContent ="Name is Incorrect ";
-                });
-
-                const text = document.querySelector('#phone');
-                const textError = document.querySelector('.phone-error');
-                text.addEventListener('input',function (){
-                    let phoneRegex = RegExp('^[+9]{1}[9]{1}[0-9]{9}');
-                    if (phoneRegex.test(text.value))
-                    textError.textContent = "";
-                    else textError.textContent = "Mobile number is incorrect";
-                });
-            </script>
+        </div>
         </div>
     </body>
 </html>
