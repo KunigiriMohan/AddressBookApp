@@ -1,7 +1,9 @@
+*{box-sizing: border-box;}
 /*Defining Properties of Contents in body*/
 body{
     margin: 0;
     height: 100%;
+    background-color: #f7f7f7;
 }
 /*Defining Properties of header row*/
 .header{
@@ -20,13 +22,12 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 0px solid green;
     width: 80%;
 }
-.logo-content-img{border: solid 0px #42515f;}
 
 .address-text{
     font: normal normal bold 20px/25px Montserrat;
+    text-align: left;
     font-family: "Montserrat",sans-serif;
     letter-spacing: 0px;
     color: #008cff;
@@ -37,11 +38,9 @@ body{
 
 .form-content{
     min-height: calc(100%-80px);
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     display: flex;
-    justify-content: center;
     align-items: center;
-    border: 0px solid green;
 }
 /*Defining Properties pf Form section*/
 .form{
@@ -55,45 +54,61 @@ body{
 }
 /*Defining Properties of foem heading properties*/
 .form-head{
+    display: flex;
+    flex-direction: row;
+    background: #2c94e9;
     font: normal normal bold 24px/37px Roboto;
-    letter-spacing: 0px;
-    color: #42515f;
-    text-transform: capitalize;
+    border-radius: 8px 8px 8px 8px;
     opacity: 1;
-    padding-bottom: 20px;
-    align-items: center;
-    height: 4.74px;
-    background-color: #008cff;
-    align-content: center;
-    padding: 10%;
+    padding: 30px;
+    
+}
+
+.form-head-text{
+    flex: 1;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    font: normal normal normal 28px/37px Roboto;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 1;
+    padding-top: 10px;
 }
 /*Giving  Properties of row-content Elements*/
 .row-content{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    align-items: left;
-    border: 0px solid green;
+    margin-left: 2% 10%;
+    min-width: 80%;
+    min-height: 80%;
+    max-width: 100%;
+    
 }
-.label{
-    min-width: 140px;
+.form-content{
+    margin: 2% 10%;
+    display: flex;
+    flex-flow: column wrap;
 }
 label{
-    padding: 12px 12px 12px 0;
+    margin-top: 20px;
     display: inline-block;
+    margin-bottom: 10px;
 }
 .text{
-    font-size: 16px;
+    text-align: left;
+    font: normal normal normal 18px/24px Roboto;
+    letter-spacing: 0px;
     color: #42515f;
     opacity: 1;
-    font-family: Roboto;
 }
 .input{
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    padding: 16px 12px;
+    border: 1px solid #bdbdbd;
     border-radius: 4px;
-    resize: vertical;
+    opacity: 1;
+    padding:16px 12px;
 }
 /* Giving Properties of Selecting Profile Picture Row*/
 
@@ -112,11 +127,9 @@ select{
 /* CSS code for Defining Button row*/
 
 .buttonParent{
+    margin-top: 50px;
     display: flex;
-    margin-bottom: 10px;
-    justify-content: space-between;
-    margin-top: 20px;
-    align-content: right;
+    justify-content: flex-end;
 }
 /*CSS code for Adding Layout to Button row*/
 .button{
@@ -159,3 +172,4 @@ error-output{
     font-style: italic;
     color: red;
 }
+*/
