@@ -127,11 +127,9 @@ select{
 /* CSS code for Defining Button row*/
 
 .buttonParent{
+    margin-top: 50px;
     display: flex;
-    margin-bottom: 10px;
-    justify-content: space-between;
-    margin-top: 20px;
-    align-content: right;
+    justify-content: flex-end;
 }
 /*CSS code for Adding Layout to Button row*/
 .button{
