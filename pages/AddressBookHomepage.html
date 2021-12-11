@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <link rel="stylesheet" href="../css/HompageDesign.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap"rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <title>Employee Payroll App</title>
+    </head>
+    <body>                  <!--------Creating Header Content------- -->
+        <header class="header-content header">
+            <div class="logo-content">
+                <img src="../assets/images/logo.png" alt="logo">
+             <div>
+                <span class="address-text">ADDRESS</span><br>
+                <span class="address-text address-book">BOOK</span>
+             </div>
+            </div>
+            </header><!--Creating Header Section  with Employee Details-->
+        <div class="main-content">
+            <div class="form-header-content">
+                <div class="emp-detail-text">Person Details 
+                </div>
+                <a href="../pages/AddressBook.html" class="add-button">
+                    <img id src="../assets/icons/add-24px.svg" alt="add" onclick="addPerson()">Add User</a>
+            </div>
+            <div class="table-main">
+                <table id="table-display" class="table">
+                    <th></th>
+                    <th>Full Name</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Zip Code</th>
+                    <th>Phone Number</th>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
