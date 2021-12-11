@@ -28,6 +28,7 @@
                 <div class="row-content">
                     <label class="label-text" for="phone">Phone Number</label>
                     <input class="input" type="text" id="phone" name="phone" placeholder="Your Mobile.."required>
+                    <error-output class="phone-error" for="phone"></error-output>
                 </div>
                 <div class="row-content">
                     <label class="label-text" for="notes">Notes</label>
@@ -62,7 +63,26 @@
                         <button type="reset" class="resetButton button">Reset</button>
                     </div>
                 </div>
-            </form>
+            </form><!-------Name and mobile validations -------><!------UC4------------>
+            <script>
+                const text = document.querySelector('#name');
+                const textError = document.querySelector('.text-error');
+                text.addEventListener('input',function(){
+                    let nameRegex = RegExp('^[A-Z]{1}[a-z]{2,}$');
+                    if(nameRegex.test(text.value))
+                        textError.textContent = "";
+                    else textError.textContent ="Name is Incorrect ";
+                });
+
+                const text = document.querySelector('#phone');
+                const textError = document.querySelector('.phone-error');
+                text.addEventListener('input',function (){
+                    let phoneRegex = RegExp('^[+9]{1}[9]{1}[0-9]{9}');
+                    if (phoneRegex.test(text.value))
+                    textError.textContent = "";
+                    else textError.textContent = "Mobile number is incorrect";
+                });
+            </script>
         </div>
     </body>
 </html>
