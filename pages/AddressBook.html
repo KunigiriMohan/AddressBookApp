@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,intial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap"rel="stylesheet">
-        <link rel="stylesheet" href="../AddressBookApp/css/addressbookcss.css">
+        <link rel="stylesheet" href="../css/addressbookcss.css">
         <title>Address Book</title>
     </head>
     <!--UC1 Adding Header Content-->
@@ -17,5 +17,52 @@
          </div>
         </div>
         </header>
+        <div class="form-content">
+            <form class="form" action="#" onsubmit="save(event);return false">
+                <div class="form-head">PERSON ADDRESS DETAILS</div>
+                <div class="row-content">
+                    <label class="label-text" for="name">Full Name</label>
+                    <input class="input" type="text" id="name" name="name" placeholder="Your Name.." required>
+                    <error-output class="text-error" for="text"></error-output>
+                </div>
+                <div class="row-content">
+                    <label class="label-text" for="phone">Phone Number</label>
+                    <input class="input" type="text" id="phone" name="phone" placeholder="Your Mobile.."required>
+                </div>
+                <div class="row-content">
+                    <label class="label-text" for="notes">Notes</label>
+                    <textarea id="notes" class="input" name="Notes"placeholder=""style="height:100px"></textarea>
+                </div>
+                <div class="row-content">
+                    <label class="label-text" for="details">City</label>
+                    <div>
+                        <select id="city"name="city">
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Hyderbad">Hyderabad</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Banglore">Banglore</option>
+                        </select>
+                        <select id="state"name="state">
+                            <option value="Maharastra">Maharastra</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tamilnadu">Tamilnadu</option>
+                            <option value="Karnataka">Karnataka</option>
+                        </select>
+                        <select id="pincode" name="pincode">
+                            <option value="400001">400001</option>
+                            <option value="500001">500001</option>
+                            <option value="600001">600001</option>
+                            <option value="510001">510001</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="buttonParent">
+                    <div class="add-reset">
+                        <button type="submit" class="button addButton" id="addButton">Add</button>
+                        <button type="reset" class="resetButton button">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
