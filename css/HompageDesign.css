@@ -50,6 +50,15 @@ body{
     letter-spacing: 0px;
     opacity: 1;
 }
+.contact-count{
+    background-color: #008cff;
+    color: #ffffff;
+    border-radius: 10%;
+    font-size: 16px;
+    width: 26px;
+    text-align: center;
+    display: inline-block;
+}
 .add-button{
     font: normal normal normal 22px/29px Roboto bold;
     letter-spacing: 0px;
